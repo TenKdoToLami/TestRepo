@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header {
+    background-color: #5400f0;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.subheaders {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+
+.subheader {
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    flex: 1;
+    /* Each subheader takes equal width */
+    text-align: center;
+    border-right: 1px solid #555;
+    /* Separation line */
+    transition: background-color 0.3s ease;
+}
+
+.subheader:hover {
+    background-color: #555;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.styled-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #45a049;
+}
