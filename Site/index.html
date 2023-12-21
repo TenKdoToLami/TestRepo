@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Content Page</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add a new style for mouseover effect */
+        .subheader:hover {
+            background-color: #555;
+            color: #fff; /* Change text color on hover */
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Bartyho testovaci stranka</h1>
+        <h1>Barty's professionally done website</h1>
     </header>
 
     <nav class="subheaders">
-        <div class="subheader" onclick="changeContent(1)">Button 1</div>
-        <div class="subheader" onclick="changeContent(2)">Button 2</div>
-        <div class="subheader" onclick="changeContent(3)">Button 3</div>
-        <div class="subheader" onclick="changeContent(4)">Button 4</div>
+        <div class="aboutMe" onclick="changeContent(1)" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)">Button 1</div>
+        <div class="currentsProject" onclick="changeContent(2)" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)">Button 2</div>
+        <div class="documentation" onclick="changeContent(3)" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)">Button 3</div>
+        <div class="demos" onclick="changeContent(4)" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)">Button 4</div>
     </nav>
 
     <section id="content">
         <p>Ahoj já jsem Bárty a toto je moje testovaci stánka</p>
     </section>
 
-    <footer>
-        <button class="styled-button">Click me!</button>
-    </footer>
-
     <script src="script.js"></script>
+    <script>
+        // JavaScript functions to add mouseover effect
+        function hoverEffect(element) {
+            element.style.backgroundColor = "#555";
+            element.style.color = "#fff";
+        }
+
+        function resetEffect(element) {
+            element.style.backgroundColor = "";
+            element.style.color = "";
+        }
+    </script>
 </body>
+
 </html>
