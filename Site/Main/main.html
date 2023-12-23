@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TKTL</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header onclick="resetContent()" onmouseover="hoverMain(this)" onmouseout="resetEffect(this)">
+        <h1>Barty's professionally done website</h1>
+    </header>
+
+    <nav class="subheaders">
+        <div class="subheader" onclick="redirect('../AboutMe/AboutMe.html')" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)">About Me</div>
+        <div class="subheader" onclick="changeContent(2)" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)">Timeline</div>
+        <div class="subheader" onclick="changeContent(3)" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)">Documentation</div>
+        <div class="subheader" onclick="changeContent(4)" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)">Demos</div>
+    </nav>
+
+    <section id="content">
+        <p>Ahoj já jsem Bárty a toto je moje testovaci stánka</p>
+    </section>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: #5400f0;
 }
 
 header {
@@ -24,11 +24,13 @@ header {
     cursor: pointer;
     padding: 10px;
     flex: 1;
-    /* Each subheader takes equal width */
     text-align: center;
     border-right: 1px solid #555;
-    /* Separation line */
     transition: background-color 0.3s ease;
+}
+
+.subheader:last-child {
+    border-right: none;
 }
 
 .subheader:hover {
@@ -36,7 +38,7 @@ header {
 }
 
 section {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
