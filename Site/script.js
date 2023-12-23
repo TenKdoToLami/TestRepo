@@ -1,4 +1,5 @@
-function changeContent(buttonNumber) {
+function changeContent(buttonNumber) 
+{
     var contentSection = document.getElementById('content');
 
     switch (buttonNumber) {
